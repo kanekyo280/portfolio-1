@@ -1,0 +1,21 @@
+@use "../global/setting" as *;
+
+.top_nav {
+    padding: 2.3rem 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.list-item {
+    border-left: 0.1rem solid $list-solid;
+    padding: 1.2rem 4rem;
+    font-size: 1.6rem;
+    color: $color2;
+
+    &:last-child {
+        border-right: 0.1rem solid $list-solid;
+    }
+}

@@ -1,17 +1,80 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @use "global";
- *   | ^^^^^^^^^^^^^
- *   '
- *   style.scss 2:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use \"global\";\d\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   style.scss 2:1  root stylesheet";
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
 }
+
+body {
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* よく使う要素だけリセット */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header_top {
+  height: 2.6rem;
+  background-color: #00A0E9;
+  display: flex;
+  align-items: center;
+}
+.header_top p {
+  color: #ffffff;
+  margin-left: 29.5rem;
+}
+
+.header_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.7rem 15rem;
+}
+
+.heading_tel {
+  margin-right: 1.8rem;
+}
+
+.top_nav {
+  padding: 2.3rem 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.list-item {
+  border-left: 0.1rem solid #cccccc;
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
+  color: #333333;
+}
+.list-item:last-child {
+  border-right: 0.1rem solid #cccccc;
+}
+
+.top-container {
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.08);
+}
+
+main {
+  border-top: 0.3rem solid #EBECE7;
+  border-bottom: 0.3rem solid #EBECE7;
+}
+
+.FV {
+  background: url(../img/mainvisual-pc.png) center/contain no-repeat;
+  height: 34.6rem;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
