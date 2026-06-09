@@ -1,0 +1,23 @@
+@use "../global/setting" as *;
+
+.section_title {
+    width: 73.2rem;
+    height: 5rem;
+    background-color: $color4;
+    color: $color2;
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &::before {
+        content: "";
+        display:block;
+        background-color: $color1;
+        width: 0.7rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+
+}
