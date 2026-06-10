@@ -1,1 +1,50 @@
 @use "../global/setting" as *;
+
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
+.news_item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.6rem;
+
+    &:first-child {
+        padding-top: 2.1rem;
+    }
+
+    &:last-child {
+        padding-bottom: 2.8rem;
+    }
+
+    & time {
+        font-size: 1.6rem;
+        color: $date-color;
+    }
+
+    & a {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: $color1;
+    }
+}
+
+.news_more {
+    width: 19rem;
+    height: 3.7rem;
+    background-color: $btn;
+    align-self: flex-end;
+
+    &_text {
+        color: $color3;
+        font-size: 1.4rem;
+        font-weight: 700;
+
+        &::after {
+            content: "＞";
+            margin-left: 2.1rem;
+            color: $color3;
+        }
+    }
+}
