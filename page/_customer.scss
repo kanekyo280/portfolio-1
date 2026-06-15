@@ -1,0 +1,68 @@
+@use "../global/setting" as *;
+
+.customer {
+    width: 73.2rem;
+
+    &_item {
+        border: 0.1rem solid $customer-solid;
+        padding: 2.5rem;
+        margin: 2.5rem 0;
+        max-width: 100%;
+
+        &:last-child {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &_voice {
+        display: flex;
+        gap: 2.5rem;
+        align-items: start;
+
+        &_img {
+            height: 17.8rem;
+            width: 17.8rem;
+            overflow: hidden;
+            flex-shrink: 0;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            height: 17.8rem;
+        }
+
+        &_info {
+            display: flex;
+            justify-content: end;
+            margin-top: auto;
+
+            & time, span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.content_title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-bottom: 0.1rem solid $customer-solid;
+    padding-bottom: 0.5rem;
+
+    & a {
+        color: $color1;
+    }
+}
+
+.content_text {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    line-height: 2.88rem;
+}
