@@ -13,13 +13,17 @@ body {
 }
 
 /* よく使う要素だけリセット */
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, h3, h4, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header_top {
@@ -170,10 +174,67 @@ main {
   height: 26rem;
 }
 .pickup_item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.customer {
+  width: 73.2rem;
+}
+.customer_item {
+  border: 0.1rem solid #cecebf;
+  padding: 2.5rem;
+  margin: 2.5rem 0;
+  max-width: 100%;
+}
+.customer_item:last-child {
+  margin-bottom: 4rem;
+}
+.customer_voice {
+  display: flex;
+  gap: 2.5rem;
+  align-items: start;
+}
+.customer_voice_img {
+  height: 17.8rem;
+  width: 17.8rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.customer_voice_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.customer_voice_content {
+  display: flex;
+  flex-direction: column;
+  height: 17.8rem;
+}
+.customer_voice_info {
+  display: flex;
+  justify-content: end;
+  margin-top: auto;
+}
+.customer_voice_info time, .customer_voice_info span {
+  font-size: 1.6rem;
+}
+
+.content_title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-bottom: 0.1rem solid #cecebf;
+  padding-bottom: 0.5rem;
+}
+.content_title a {
+  color: #00A0E9;
+}
+
+.content_text {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  line-height: 2.88rem;
 }
 
 /*# sourceMappingURL=style.css.map */
