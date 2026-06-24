@@ -47,6 +47,11 @@ a {
   margin-right: 1.8rem;
 }
 
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .footer_inner {
   display: flex;
   justify-content: center;
