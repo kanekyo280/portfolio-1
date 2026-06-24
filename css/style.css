@@ -47,9 +47,19 @@ a {
   margin-right: 1.8rem;
 }
 
+footer {
+  padding-bottom: 4rem;
+}
+
 .footer_inner {
   display: flex;
   justify-content: center;
+  gap: 6.4rem;
+  margin: 4.5rem 0;
+}
+
+.copy-right {
+  text-align: center;
 }
 
 .top_nav {
