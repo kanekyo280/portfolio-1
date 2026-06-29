@@ -1,9 +1,7 @@
 @use "../global/setting" as *;
 
 .section_title {
-    width: 73.2rem;
     height: 5rem;
-    background-color: $color4;
     color: $color2;
     font-size: 2.2rem;
     font-weight: 600;
@@ -21,3 +19,9 @@
     }
 
 }
+
+.main_section {
+    width: 73.2rem;
+    background-color: $color4;
+}
+
